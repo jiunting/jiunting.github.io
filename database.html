@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Tim Lin</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<!--CSS RWD-->
+		<style>
+			.mergbox{
+				width:100%;border: 0px solid green; margin-left: auto;margin-right: auto;
+			}
+			.box12{
+				border: 0px solid blue;width:30%;display:inline-block;vertical-align: top;
+				width:62%;
+			}
+			.box3{
+				border: 0px solid yellow;width:35%;display:inline-block;vertical-align: top;
+				font-size:16px
+			}
+			p1:hover {
+				color:rgb(235, 112, 112);
+				/* background-color:black; */
+				transition: 0.3s;
+			}
+
+			div1:hover{
+				/* box-shadow: 0 0 0 50vmax rgba(0, 0, 0, .5); */
+				width:64%;
+				transition: 0.3s;
+			}
+			.tooltip {
+ 				position: relative;
+  				display: inline-block;
+  				border-bottom: 1px dotted black;
+			}
+			.tooltip .tooltiptext {
+  				visibility: hidden;
+				width: 200px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 5px;
+				padding: 2px 0;
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1; 
+			}
+			.tooltip:hover .tooltiptext {
+  				visibility: visible;
+			}
+
+			@media screen and (max-width:960px){
+				.box12{width:40%}
+				.box3{display:unset}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a class="logo" href="index.html">Home</a>
+			<a class="logo" href="research.html">Research</a>
+			<a class="logo" href="publication_talk.html">Publications</a>
+			<a class="logo" href="https://github.com/jiunting">Github</a>
+			<a class="logo" href="https://drive.google.com/file/d/1Do5SogcdvddbXexriWdWdPXk1-cQLR_h/view?usp=sharing">CV</a>
+			<a class="logo" href="https://sites.google.com/site/jtimweb/">Old Webpage</a>
+			<a class="logo"></a>
+			<a class="logo"></a>
+			<a class="logo"></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="publication_talk.html">Publications</a></li>
+				<li><a href="https://github.com/jiunting">Github</a></li>
+				<li><a href="https://drive.google.com/file/d/1Do5SogcdvddbXexriWdWdPXk1-cQLR_h/view?usp=sharing">CV</a></li>
+				<li><a href="https://sites.google.com/site/jtimweb/">Old Webpage</a></li>
+				<li><a href="mailto:jiunting@uoregon.edu"> Contact me</a></li>
+			</ul>
+		</nav>
+
+		<!-- Banner -->
+			<section id="banner" style="background-image: url('images/craterlake.jpg'); ">
+				<div class="inner" >
+					<p style="font-weight: bold;font-size:46px; color:white">MySQL Database for Global Seismic Events</p>
+				</div>
+			</section>
+
+
+
+		<!-- Highlights -->
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<!-- The first part -->
+						<p></p>
+						<div style="font-size: 30px;background-color: rgb(156, 206, 240,0); font-weight: bold; text-shadow:0 0 0px rgb(20, 20, 20);">Introduction</div>
+						<p1 style="display: block; text-align:middle; margin-inline-start: 0px; margin-inline-end: 0px; margin-block-start: 0em; margin-block-end: 0em; font-style:normal;font-style:normal; font-family:Arial, Helvetica, sans-serif; font-size:20px;text-shadow:0 0 0px rgb(20, 20, 20) ; transition: 0.3s"> Earthquakes information are usually available through IRIS and USGS open-data; however, the way of data querying is limited and sometimes complicated. To facilitate earthquake research, I made a MySQL databse, which is a unique copy of the global seismic events from USGS (since 2010), and the station, network information from IRIS.  </p1> 
+						<img width="100%" src="./images/DB_map.png" title="Events and stations in the DB"></img>
+						<p2>Seismic events (white) and stations (red) in the database</p2>
+						<div style="display: block; text-align:left; margin-inline-start: 0px; font-size:20px; margin-inline-end: 0px; margin-block-start: 0em; margin-block-end: 2em;">
+							<li style="margin-bottom:0px">226,410 events with M3.0+</li>
+							<li style="margin-bottom:0px">992 networks and 57,575 stations</li>
+							<li style="margin-bottom:0px">8,173,763 event-station pairs</li>
+						</div>
+									
+						<div style="font-size: 30px;background-color: rgb(156, 206, 240,0); font-weight: bold; text-shadow:0 0 0px rgb(20, 20, 20);">APIs</div>
+						<div style="display: block; text-align:left; margin-inline-start: 0px; font-size:20px; margin-inline-end: 0px; margin-block-start: 0em; margin-block-end: 2em;">
+							<li style="margin-bottom:20px">Search earthquake by State name</li>
+							<img width="100%" src="./images/DBDemo_1.gif" title="Events and stations in the DB"></img>
+						
+							<li style="margin-bottom:20px">992 networks and 57,575 stations</li>
+							<li style="margin-bottom:20px">8,173,763 event-station pairs</li>
+						</div>
+
+						<div style="font-size: 30px;background-color: rgb(156, 206, 240,0); font-weight: bold; text-shadow:0 0 0px rgb(20, 20, 20);">Conference Abstracts</div>
+						
+
+
+					</header>
+
+
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<div class="content">
+					<section>
+						<h3 style="margin: 0 0 0.5rem 0">Tim Lin</h3>
+						<h4 style="margin: 0 0 0.5rem 0">Earth and Computational Scientist</h4>
+						<p>Processed time series data with 10+ years of experience facilitating modeling and machine learning solutions to improve accuracy and efficiency. Designed NASA project on using deep learning time series forecasting model with significant earthquake warning improvement. Developed and optimized data mining signal detection tools to achieve large-scale data analysis with high performance computing. I like to think about what we can learn from data.</p>
+					</section>
+					<section>
+						<h4>Award & Grant Links</h4>
+						<ul class="alt">
+							<li><div class="tooltip"><a href="https://science.nasa.gov/researchers/sara/grant-stats/nasa-earth-and-space-science-fellowship-nessf-selections">NASA Earth & Space Science Fellow</a> <a class="tooltiptext"  target="_blank" rel="noopener noreferrer">Click: NESSF 2018 Awards and Information -> Selections -> Earth Science -> then search the name: Jiun-Ting Lin</a> </div> </li>
+							<li><div class="tooltip"><a href="https://www.agu.org/Learn-and-Develop/Learn/Student-Competitions/OSPA/OSPA-Winners">Outstanding Student Presentation Award</a> <a class="tooltiptext"  target="_blank" rel="noopener noreferrer">Click: 2019 Winners -> then search the name: Jiun-Ting Lin</a> </div> </li>
+							<li><div class="tooltip"><a href="https://www.gst.org.tw/cht/about_award.php?serial=7">Dr. Juan V.C. Best Paper Award</a> <a class="tooltiptext"  target="_blank" rel="noopener noreferrer"> Search the 2017 Winners</a> </div> </li>
+							<li><a href="https://earthsciences.uoregon.edu/">Research Recognition Award @ UO</a></li>
+						</ul>
+					</section>
+					<section>
+						<h4>Social Media</h4>
+						<ul class="plain">
+							<!-- <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li> -->
+							<li><a href="https://www.facebook.com/supuky/"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+							<li><a href="https://www.linkedin.com/in/jiuntimlin/"><i class="icon fa-linkedin">&nbsp;</i>LinkedIn</a></li>
+							<li><a href="https://github.com/jiunting"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							<li><a href="https://sites.google.com/site/jtimweb/"><i class="icon fa-google">&nbsp;</i>Google Site</a></li>
+						</ul>
+					</section>
+				</div>
+				<div class="copyright">
+					&copy; 2021 Jiun-Ting Lin 
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
