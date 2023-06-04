@@ -16,7 +16,14 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
+		 <!-- Main Stylesheet File -->
+		 <!-- <link href="./Example/EqHaz@UO_files/style.css" rel="stylesheet"> -->
+ 		 <!-- Bootstrap CSS File -->
+  		<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+
+
+
+		<!-- Template Main Javascript File -->
 		<!--CSS RWD-->
 		<style>
 			.mergbox{
@@ -54,10 +61,13 @@
 			.tooltip:hover .tooltiptext {
   				visibility: visible;
 			}
+			/* .col-lg-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}
+			.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%} */
 			@media screen and (max-width:960px){
 				.box12{width:40%}
 				.box3{display:unset}
 			}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -92,14 +102,15 @@
 					<li><a href="mailto:jiunting@uoregon.edu"> Contact me</a></li>
 				</ul>
 			</nav>
-
+				
 
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
 					<p style="font-weight: bold;font-size:46px; color:white">Tim Lin</p>
-					<p>PhD candidate of Earth Sciences at the <span style="font-weight: bold;font-size:20px; "><a href="https://www.uoregon.edu/">University of Oregon</a> </span></p>
-					<p>NASA Earth and Space Science Fellow since 2018 </p>
+					<p>Earth Sciences PhD</p>
+					<p>Currently a Postdoctoral Researcher at <span style="font-weight: bold;font-size:20px; "><a href="https://www.llnl.gov/">Lawrence Livermore National Laboratory</a> </span></p>
+					<p>NASA Earth and Space Science Fellow 2018-2021 </p>
 				</div>
 				<video autoplay loop muted playsinline src="images/Mountains in the fog.mp4"></video>
 			</section>
@@ -145,6 +156,93 @@
 			
 					</header>
 		
+
+					<section id="portfolio">
+						<div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; ">
+						  <div class="section-header">
+							<h3 class="section-title">Portfolio</h3>
+							<p class="section-description"></p>
+						  </div>
+						  <div class="row">
+				  
+							<div class="col-lg-12">
+							  <ul id="portfolio-flters">
+								<li data-filter=".filter-data, .filter-ML, .filter-science" class="">All</li>
+								<li data-filter=".filter-data" class="filter-active">Data</li>
+								<li data-filter=".filter-ML" class="">ML/AI</li>
+								<li data-filter=".filter-science" class="">Science</li>
+							  </ul>
+							</div>
+						  </div>
+				  
+						  <div class="row" id="portfolio-wrapper" style="opacity: 1; ">
+
+							<div class="col-lg-3 col-md-6 portfolio-item filter-data" style="transform: scale(1);">
+							  <a href="images/DB_map.png">
+								<img src="images/DB_map_small.png" alt="">
+								<div class="details">
+								  <h4>Database</h4>
+								  <span>A global earthqukae and station database</span>
+								</div>
+							  </a>
+							</div>
+				  
+							<div class="col-lg-3 col-md-6 portfolio-item filter-data" style="transform: scale(1);">
+								<a href="images/research_4_1.png">
+								  <img src="images/research_4_1_small.png" alt="">
+								  <div class="details">
+									<h4>Simulation</h4>
+									<span>Rupture simulation and synthetic waveforms in Chile</span>
+								  </div>
+								</a>
+							  </div>
+
+							<div class="col-lg-3 col-md-6 portfolio-item filter-ML" style="transform: scale(0); display: none;">
+							  <a href="images/Exp_architecture.png">
+								<img src="images/Exp_architecture_small.png" alt="">
+								<div class="details">
+								  <h4>Deep learning on large earthquakes</h4>
+								  <span>M-LARGE: A RNN model for large earthquake early warning</span>
+								</div>
+							  </a>
+							</div>
+							
+							<div class="col-lg-3 col-md-6 portfolio-item filter-ML" style="transform: scale(0); display: none;">
+								<a href="images/research_3_1.png">
+								  <img src="images/research_3_1_small.png" alt="">
+								  <div class="details">
+									<h4>Deep learning on small earthquakes</h4>
+									<span>A CNN U-net based model for low-frequency earthquake mining</span>
+								  </div>
+								</a>
+							  </div>
+
+							  <div class="col-lg-3 col-md-6 portfolio-item filter-ML" style="transform: scale(0); display: none;">
+								<a href="images/research_6_1.png">
+								  <img src="images/research_6_1_small.png" alt="">
+								  <div class="details">
+									<h4>Deep learning on data simulation</h4>
+									<span>A GAN model for synthetic earthquake and explosion</span>
+								  </div>
+								</a>
+							</div>
+							
+							<div class="col-lg-3 col-md-6 portfolio-item filter-science" style="transform: scale(0); display: none;">
+							  <a href="images/research_2_2.png">
+								<img src="images/research_2_2_small.png" alt="">
+								<div class="details">
+								  <h4>Overlapping fast & slow slip</h4>
+								  <span>A detailed inversion model reveals overlapping fast and slow slip</span>
+								</div>
+							  </a>
+							</div>
+							       
+						  </div>
+				  
+						</div>
+					  </section>
+
+
 
 					<div class="highlights">
 						<section>
