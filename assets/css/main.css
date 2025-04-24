@@ -2071,6 +2071,51 @@ ul.icons {
   position: relative;
   text-align: center;
   z-index: 1; }
+
+  #cta p.research-text {
+    font-size: 18px;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #e0e6f0; /* ← changed from #ffffff */
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.45);
+    margin-bottom: auto;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color 0.3s ease;
+  }
+  
+  #cta p.research-text:hover {
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+  }
+  
+
+  #cta a.paper-link {
+    display: inline-block;
+    margin-top: 0.8em;
+    padding: 0.2em 0.3em;
+    background-color: transparent;
+    color: #d2e3ff;
+    border: 1px solid rgba(210, 227, 255, 0.4);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    transition: all 0.25s ease-in-out;
+    backdrop-filter: blur(3px);
+  }
+  
+  #cta a.paper-link:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+  }
+
   #cta input, #cta select, #cta textarea {
     color: #ffffff; }
   #cta a {
